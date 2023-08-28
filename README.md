@@ -6,7 +6,7 @@ Author: Mrunmayee Damle
 <br>
 Date of creation : 27-08-23
 
-# commands :
+# Commands :
 1] git clone (link) - to clone a repo
 <br>
 2] git status - check status of repo
