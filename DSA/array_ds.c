@@ -6,10 +6,10 @@
 void display_array(int array[100]);
 void insert_element(int array[100]);
 void delete_element(int array[100]);
-//void search_array(int array[100]);
-//void reverse_array(int array[100]);
+void search_array(int array[100]);
+void reverse_array(int array[100]);
 
-int i, n;
+int i, j, n;
 
 int main()
 {
@@ -34,11 +34,11 @@ int main()
         break;
         case 2: insert_element(array);
         break;
-        case 3: //delete_element(array);
+        case 3: delete_element(array);
+        break; 
+        case 4: search_array(array);
         break;
-        case 4: //search_array(array);
-        break;
-        case 5: //reverse_array(array);
+        case 5: reverse_array(array);
         break;
         default: printf("Invalid choice. Program terminated");
                  exit(0);
@@ -46,7 +46,7 @@ int main()
     printf("Do you want to continue? (Y)es or (N)o ");
     scanf(" %c", &c);
     }
-    while(c == 'Y');
+    while(c == 'Y' || c == 'y');
     return 0;
 }
 
@@ -84,6 +84,49 @@ void insert_element(int array[100])
 }
 
 void delete_element(int array[100])
+{
+    int pos;
+    printf("Enter the position of number you want to delete. \n");
+    scanf("%d", &pos);
+    if (pos >= n+1)  
+    {  
+        printf("Deletion is not possible in the array. \n");  
+    }  
+    else  
+    {  
+        for (i = pos - 1; i < n -1; i++)  
+        {  
+            array[i] = array[i+1];
+        }  
+    }
+    printf("The resultant array is: \n");  
+    for (i = 0; i< n - 1; i++)  
+        {  
+            printf (" array[%d] = ", i);  
+            printf (" %d \n", array[i]);  
+        } 
+}
+
+void search_array(int array[100])
+{
+    int num;
+    printf("Enter the number you want to search. \n");
+    scanf("%d", &num);
+    for(i = 0; i < n; i++)
+    {
+        if (array[i] == num)
+        {
+            printf("Element %d found in position %d \n", num, i+1);
+            break;
+        }
+    }
+    if(i == n)
+    {
+        printf("Element %d isn't present in the array. \n", num);
+    }
+}
+
+void reverse_array(int array[100])
 {
     
 }
