@@ -128,5 +128,25 @@ void search_array(int array[100])
 
 void reverse_array(int array[100])
 {
-    
+    int rev[n];
+    int j = 0;
+    printf("Array before reversing: [");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", array[i]);
+    }    
+    printf("] \n");
+
+    for(i = n - 1; i >= 0; i--)
+    {
+        rev[j] = array[i];
+        j++;
+    }
+
+    printf("Array after reversing: [");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", rev[i]);
+    }
+    printf("] \n");
 }
