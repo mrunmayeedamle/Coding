@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define size 10
+#define size 50
 
 int top = -1, stack[size];
 void push();
