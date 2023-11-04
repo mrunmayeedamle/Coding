@@ -1,9 +1,9 @@
 # Day 7 -
 # Simple Calculator in Python
 print("Enter the first number:")
-a = input()
+a = int(input())
 print("Enter the second number:")
-b = input()
+b = int(input())
 
 print("Enter the operation you want to perform: ")
 ch = input()
