@@ -56,7 +56,7 @@ void insert_at_start()
 {
     struct node *ptr;
     int num;
-    ptr = (struct node*)malloc(sizeof(struct node*));
+    ptr = (struct node*)malloc(sizeof(struct node));
     
     if(ptr == NULL)
     {
@@ -79,7 +79,7 @@ void insert_at_end()
 {
     struct node *ptr, *temp;
     int num;
-    ptr = (struct node*)malloc(sizeof(struct node*));
+    ptr = (struct node*)malloc(sizeof(struct node));
 
     if(ptr == NULL)
     {
@@ -118,7 +118,7 @@ void random_insert()
 {
     int i, loc, num;
     struct node *ptr, *temp;
-    ptr = (struct node*)malloc(sizeof(struct node*));
+    ptr = (struct node*)malloc(sizeof(struct node));
 
     if(ptr == NULL)
         {
