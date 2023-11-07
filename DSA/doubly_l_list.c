@@ -64,6 +64,14 @@ void insert_at_start()
             ptr->data = item;
             head = ptr;
         }
+        else
+        {
+            ptr->data = item;
+            ptr->prev = NULL;
+            ptr->next = head;
+            head->prev = ptr;
+            head = ptr;
+        }
         printf("Node Insterted. \n");
     }
 }
