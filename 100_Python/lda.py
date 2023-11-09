@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler #feature scaling 
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA  
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+from sklearn.linear_model import LogisticRegression  
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
@@ -23,14 +24,9 @@ sc = StandardScaler()
 x_train = sc.fit_transform(x_train) #fit and transform data
 x_test = sc.transform(x_test) #transform data
 
-lda = LDA(n_components= 2)
+lda = LDA(n_components= 3) #number of features to be reduced to
 
 x_train = lda.fit_transform(x_train, y_train)
 x_test = lda.transform(x_test)
 
 print(x_train)
-
-
-'''
-from sklearn.linear_model import LogisticRegression
-'''
