@@ -17,7 +17,7 @@ y = dataset.iloc[:, 13].values # : - All rows, 2 - column get printed
 #print(y)
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size= 0.2, random_state= 0) 
-# 0.2 - 20% testing, rest training 
+# 0.2 - 20% testing, rest 80% training 
 
 
 sc = StandardScaler()
