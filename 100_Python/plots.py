@@ -8,7 +8,7 @@ from scipy.stats import norm
 x = [1000,2000,3000,4000,5000,6000,7000,8000,9000]
 y = [200000,400000,600000,800000,300000,500000,700000,900000,600000]
 
-'''plt.plot(x, y)
+plt.plot(x, y)
 plt.show()
 plt.scatter(x, y)
 plt.show()
@@ -21,7 +21,7 @@ plt.show()
 plt.boxplot(x)
 plt.show()
 plt.boxplot(y)
-plt.show() ''' 
+plt.show() 
 
 
 '''plt.subplot(1,3,1)

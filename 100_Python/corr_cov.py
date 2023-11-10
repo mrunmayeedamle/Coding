@@ -26,6 +26,7 @@ def std(k):
         b=b+a
     std_of_k=math.sqrt(b/n)
     return std_of_k
+
 def corre():
     r=(cov (x)*cov(y))/std(x)*std(y)
     return r
