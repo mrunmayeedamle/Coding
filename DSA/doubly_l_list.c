@@ -5,6 +5,9 @@
 void insert_at_start();
 void insert_at_end();
 void random_insert();
+void delete_at_start();
+void delete_at_end();
+void random_delete();
 void display();
 
 struct node{
@@ -21,7 +24,8 @@ int main()
     {
         printf("Linked list operations \n \n");
         printf("Enter the operation you want to perform: \n");
-        printf("1) Insert : At start. \n2) Insert: At end. \n3) Insert anywhere \n4) Display list \n5) Exit \n");
+        printf("1) Insert : At start. \n2) Insert: At end. \n3) Insert anywhere \n4) Delete a node at the start \n");
+        printf("5) Delete node at the end \n6) Delete node randomly \n7) Display list \n8) Exit \n");
         scanf("%d", &x);
         switch(x)
         {
@@ -31,9 +35,15 @@ int main()
             break;
             case 3: random_insert();
             break;
-            case 4: display();
+            case 4: delete_at_start();
             break;
-            case 5: exit(1);
+            case 5: delete_at_end();
+            break;
+            case 6: random_delete();
+            break;
+            case 7: display();
+            break;
+            case 8: exit(1);
             break;
             default: printf("Error! Wrong Choice. \n");
         }
@@ -144,6 +154,82 @@ void random_insert()
         temp->next = ptr;
         temp->next->prev = ptr;
         printf("Node Inserted. \n");
+    }
+}
+
+void delete_at_start()
+{
+    struct node *ptr;  
+    if(head == NULL)  
+    {  
+        printf("List is empty \n\n");
+    }  
+    else if(head->next == NULL)  
+    {  
+        head = NULL;   
+        free(head);  
+        printf("Node deleted.\n");
+    }  
+    else  
+    {  
+        ptr = head;  
+        head = head -> next;  
+        head -> prev = NULL;  
+        free(ptr);  
+        printf("Node deleted.\n");
+    }  
+}
+
+void delete_at_end()
+{
+    struct node *ptr;  
+    if(head == NULL)  
+    {  
+        printf("List is empty \n\n");
+    }  
+    else if(head->next == NULL)  
+    {  
+        head = NULL;   
+        free(head);   
+        printf("Node deleted.\n");
+    }  
+    else   
+    {  
+        ptr = head;   
+        if(ptr->next != NULL)  
+        {  
+            ptr = ptr -> next;   
+        }  
+        ptr -> prev -> next = NULL;   
+        free(ptr);  
+        printf("Node deleted.\n");
+    }  
+}
+
+void random_delete()
+{
+    struct node *ptr, *temp;  
+    int val;  
+    printf("Enter the position of the node after which you want to delete: \n");
+    scanf("%d", &val);  
+    ptr = head;  
+    while(ptr -> data != val)  
+    ptr = ptr -> next;  
+    if(ptr -> next == NULL)  
+    {  
+        printf("Empty list. \n\n");
+    }  
+    else if(ptr -> next -> next == NULL)  
+    {  
+        ptr ->next = NULL;  
+    }  
+    else  
+    {   
+        temp = ptr -> next;  
+        ptr -> next = temp -> next;  
+        temp -> next -> prev = ptr;  
+        free(temp);  
+        printf("Deleted node.");
     }
 }
 
