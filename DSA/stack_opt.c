@@ -13,11 +13,11 @@ int main()
 {
     int n;
     char c;
-    do
+    while(1)
     {
         printf("Stack Operations: \n \n");
         printf("Select the operation to be performed: \n");
-        printf("1) Push an element, 2) Pop an element, 3) Show the remaining stack, 4) Exit -> ");
+        printf("1) Push an element, 2) Pop an element, 3) Display stack, 4) Exit -> ");
         scanf("%d", &n);
 
         switch(n)
@@ -32,10 +32,8 @@ int main()
             break;
             default: printf("Invalid Input!! \n"); 
         }
-        printf("Do you want to continue? -> (Y)es or (N)o? \n");
-        scanf(" %c", &c);
         sleep(1);
-    } while (c == 'Y' || c == 'y');
+    }
     return 0;    
 }
 
@@ -52,6 +50,7 @@ void push()
         scanf("%d", &x);
         top += 1;
         stack[top] = x;
+        printf("%d is pushed in stack. \n\n", x);
     }
 }
 

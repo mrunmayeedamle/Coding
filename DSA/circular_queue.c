@@ -1,4 +1,3 @@
-//Performing operations in Queue such as en-queue, de-queue and display.
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -14,7 +13,7 @@ int main()
     int n;
     while(1)
     {
-        printf("Queue Operations: \n \n");
+        printf("Circular Queue Operations: \n \n");
         printf("Select the operation to be performed: \n");
         printf("1) Enter an element, 2) Remove an element, 3) Display the queue, 4) Exit -> ");
         scanf("%d", &n);
@@ -39,7 +38,7 @@ int main()
 void enQueue()
 {
     int num;
-    if(r == size - 1)
+    if(f == r + 1 || f == 0 && r == size-1)
     {
         printf("Invalid!! Queue is full! \n\n");
     }
@@ -49,7 +48,7 @@ void enQueue()
         {
             f = 0;
         }
-        r++;
+        r = ((r + 1) % size);
         printf("Enter the number you want to insert in the queue: \n");
         scanf("%d", &num);
         queue[r] = num;
@@ -58,17 +57,20 @@ void enQueue()
 
 void deQueue()
 {
-    if(f == -1)
+    if (f == -1)
     {
         printf("Invalid!! Queue is empty! \n\n");
     }
     else
     {
         printf("Removed element: %d \n\n", queue[f]);
-        f++;
-        if(f>r)
+        if(f == r)
         {
             f = r = -1;
+        }
+        else
+        {
+            f = ((f + 1) % size);
         }
     }
 }
@@ -87,6 +89,6 @@ void display()
         {
             printf("%d  ", queue[i]);
         }
-        printf("|");
+        printf("|\n\n");
     }
 }
