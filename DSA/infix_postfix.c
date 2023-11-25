@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #define size 50
 
 int precedence(char);
@@ -9,7 +10,15 @@ char* in_to_post(char*);
 
 int main()
 {
+    char expr[size];
+    printf("Enter the expression: ");
+    scanf("%s", expr);
 
+    char* postfix = in_to_post(expr);
+    printf("Infix to Postfix: ");
+    printf("%s \n", postfix);
+    free(postfix);
+    return 0;
 }
 
 int precedence(char opt)
@@ -51,7 +60,37 @@ char* in_to_post(char* infix)
         }
         if(isalnum(infix[i]))
         {
-            
+            postfix[j++] = infix[i];
+        }
+        else if(infix[j] == '(')
+        {
+            stack[++top] = infix[i];
+        }
+        else if(infix[j] == ')')
+        {
+            while(top > -1 && stack[top] != '(')
+            {
+                postfix[j++] = stack[top--];
+            }
+            top--;
+        }
+        else if(isOpt(infix[i]))
+        {
+            while(top > -1 && precedence(stack[top]) >= precedence(infix[i]))
+            {
+                postfix[j++] = stack[top--];
+            }
+            stack[++top] = infix[i];
         }
     }
+    while(top > -1)
+    {
+        if(stack[top] == '(')
+        {
+            return "Invalid Expression";
+        }
+        postfix[j++] = stack[top--];
+    }
+    postfix[j] = '\0';
+    return postfix;
 }
