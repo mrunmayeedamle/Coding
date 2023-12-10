@@ -62,11 +62,11 @@ char* in_to_post(char* infix)
         {
             postfix[j++] = infix[i];
         }
-        else if(infix[j] == '(')
+        else if(infix[i] == '(')
         {
             stack[++top] = infix[i];
         }
-        else if(infix[j] == ')')
+        else if(infix[i] == ')')
         {
             while(top > -1 && stack[top] != '(')
             {

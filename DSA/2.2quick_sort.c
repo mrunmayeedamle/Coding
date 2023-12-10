@@ -38,7 +38,8 @@ int main()
 
 int partition(int l, int h)
 {
-    int pivot = array[h];
+    int pivot = array[h]
+    ;
     i = (l - 1);
 
     for(j = l; j <= h - 1; j++)
