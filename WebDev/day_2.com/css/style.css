@@ -1,0 +1,129 @@
+body {
+  background-color: darkblue;
+}
+
+.ball {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.ball:hover {
+  transition-duration: 1s;
+  transform: translate(1000px) rotate(360deg);
+}
+
+.logo {
+  color: white;
+  font-size: 50px;
+  font-family: "myFont";
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/Calligraphy.otf);
+}
+.test {
+  background-color: skyblue;
+  width: 400px;
+  height: 100px;
+  display: inline-block;
+}
+
+.some {
+  background-color: deepskyblue;
+  width: 400px;
+  height: 100px;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  color: black;
+  padding: 20px;
+  font-size: 25px;
+  width: 200px;
+  font-family: fantasy;
+}
+
+.slider {
+  height: 370px;
+}
+
+.intro {
+  color: aliceblue;
+  font-family: "myFont";
+  font-size: 60px;
+  width: 40%;
+  display: inline-block;
+  margin-top: 70px;
+  padding: 40px;
+}
+
+.para {
+  font-family: serif;
+  color: aliceblue;
+  font-size: 20px;
+}
+ul {
+  background-color: aliceblue;
+  border-radius: 20px;
+  text-align: center;
+}
+
+li:hover {
+  transition-duration: 0.5s;
+  background-color: slateblue;
+  padding: 20px;
+}
+
+.blob {
+  display: inline-block;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 50%;
+  top: 50px;
+  width: 50%;
+}
+
+.blob-img {
+  animation-name: Rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.books {
+  display: inline-block;
+  right: 400px;
+  top: 100px;
+  z-index: 40;
+  position: absolute;
+}
+
+.prod {
+  height: 500px;
+  background-color: #00c3ff;
+}
+
+.p {
+  font-size: 25px;
+  font-family: serif;
+  width: 24.8%;
+}
+
+.p {
+  display: inline-block;
+}
+button {
+  width: 100px;
+  height: 25px;
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
