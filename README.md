@@ -1,4 +1,5 @@
 # Coding
+
 This will be the place to save all my codes
 
 <br>
@@ -7,6 +8,7 @@ Author: Mrunmayee Damle
 Date of creation : 27-08-23
 
 # Commands :
+
 1] git clone (link) - to clone a repo
 <br>
 2] git status - check status of repo
@@ -26,16 +28,17 @@ Date of creation : 27-08-23
 9] git push origin main - push to remote repo from local repo
 <br>
 10] git init - add new file as Repo with .git file -
-     git remote add origin (link) -
-     git remote -v (verify) -
-     git branch (check branch) 
+git remote add origin (link) -
+git remote -v (verify) -
+git branch (check branch)
 <br>
 11] git branch -M (name) - renaming branch -
-     git checkout (branch_name) - navigate - 
-     git checkout -b(new_name) - create new branch -
-     git branch -d(branch_name) - delete branch
-     git diff (branch_name) - compare branches
-     git merge(branch_name) - merge branches
+git checkout (branch_name) - navigate -
+git checkout -b(new_name) - create new branch -
+git branch -d(branch_name) - delete branch
+git push -d origin (branch_name) - delete branch remotely
+git diff (branch_name) - compare branches
+git merge(branch_name) - merge branches
 <br>
 12] git pull origin main - pull to local repo from remote repo
 <br>
@@ -44,5 +47,5 @@ Date of creation : 27-08-23
 14] git reset HEAD~1 - undo 1 commit
 <br>
 15] git reset (commit hash) - reset more commits -
-     git log - check commits
+git log - check commits
 <br>
