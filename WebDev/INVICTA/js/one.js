@@ -28,3 +28,6 @@ console.log(fullname_);
 
 let z = BigInt("5465413268432");
 console.log(z);
+
+var str = "Invicta";
+console.log(str.slice(2));
