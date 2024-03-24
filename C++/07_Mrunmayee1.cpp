@@ -31,9 +31,6 @@ int main()
 	cout<<"Calculating Area Of Rectangle"<<endl;
 	cout<<"Enter length and breadth of rectangle: "<<endl;
 	cin>>l>>b;
-	Rectangle R;
-	R.set(l,b);                                     //accessing member functions
-	R.display();
-	cout<<"Area of Rectangle = "<<R.calc_Area();
-	return 0;
+	
+	
 }
