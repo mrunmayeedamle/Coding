@@ -31,3 +31,29 @@ console.log(z);
 
 var str = "Invicta";
 console.log(str.slice(2));
+
+let marks_student = 84;
+let marks_student1 = 85;
+let marks_student2 = 92;
+
+let marks = {
+  stu: 97,
+  stu1: 54,
+  stu2: 95,
+};
+console.log(marks);
+
+const mark = [25, 26, 27, 28, 29, 30];
+console.log(mark);
+
+const heros = ["Iron Man", "Spider Man", "Scarlet Witch", 35];
+console.log(heros);
+console.log(heros[2]);
+
+const cars = ["Audi", "Koenigsegg", "BMW", "Volvo"];
+let car = cars[1];
+console.log(cars.slice(1));
+
+for (let i = 0; i < cars.length; i++) {
+  console.log(cars[i]);
+}
