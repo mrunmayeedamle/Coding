@@ -57,3 +57,24 @@ console.log(cars.slice(1));
 for (let i = 0; i < cars.length; i++) {
   console.log(cars[i]);
 }
+
+let food_items = ["Apple", "Mango", "Chocolate", "Cereal"];
+console.log(food_items);
+
+console.log(food_items.toString());
+
+//food_items.unshift("Guava");
+//console.log(food_items);
+
+food_items.shift();
+console.log(food_items);
+
+function myFun() {
+  console.log("Oui Oui");
+}
+myFun();
+
+function func(msg) {
+  console.log(msg);
+}
+func("Hello World!");
