@@ -7,6 +7,11 @@ int v,c = 0;
 [A-Za-z] {printf("%s is a consonant \n", yytext); c++;}
 %%
 
+int yywrap()
+{
+return (1);
+}
+
 int main()
 {
 printf("Enter a string:");
