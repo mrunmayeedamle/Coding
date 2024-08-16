@@ -14,6 +14,8 @@ public class calcgrade{
 		m4 = scan.nextFloat();
 		m5 = scan.nextFloat();
 
+		scan.close();
+
 		Grade = (m1 + m2 + m3 + m4 + m5) / 5;
 
 		if(Grade < 50) {
