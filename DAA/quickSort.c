@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int swap(int *a, int *b)
+void swap(int *a, int *b)
 {
     int t = *a;
     *a = *b;
@@ -29,7 +29,7 @@ int partition(int arr[], int low, int high)
 void quickSort(int arr[], int low, int high)
 {
     int pi;
-    while(low < high)
+    if(low < high)
     {
         pi = partition(arr, low, high);
 
@@ -44,9 +44,9 @@ void printArray(int arr[], int n)
 {
     for(int i = 0; i< n; i++)
     {
-        printf("%d ", &arr[i]);
+        printf("%d ", arr[i]);
     }
-    printf("]");
+    printf("]\n");
 }
 
 int main()
