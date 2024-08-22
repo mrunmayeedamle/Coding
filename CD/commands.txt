@@ -3,3 +3,5 @@ flex <filename>.l
 gcc lex.yy.c
 
 a.exe
+
+(ctrl + z + enter) for EOF

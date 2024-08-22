@@ -7,6 +7,11 @@ int dig, letter;
 [A-Za-z] {printf("%s is a letter\n", yytext); letter++;} 
 %%
 
+int yywrap()
+{
+return (1);
+}
+
 int main()
 {
 printf("Enter your input:");
