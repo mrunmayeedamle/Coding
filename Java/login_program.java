@@ -8,12 +8,15 @@ public class login_program{
 		username = "Tanaj2004";
 		password = "TanajisDumb";
 
-		Scanner scan = new Scanner(System.in);
+		try (Scanner scan = new Scanner(System.in);)
+		{
 		System.out.println("Enter username: ");
 		temp_user = scan.nextLine();
 		
 		System.out.println("Enter password: ");
 		temp_pass = scan.nextLine();
+
+		}
 		
 		if(username.equals(temp_user) == true && password.equals(temp_pass) == true) {
 			System.out.print("Login Successful.");

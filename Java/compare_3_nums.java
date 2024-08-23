@@ -5,7 +5,8 @@ public class compare_3_nums{
 	public static void main(String[] args) {
 
 		int a, b, c;
-		Scanner scan = new Scanner(System.in);
+		try(Scanner scan = new Scanner(System.in);)
+		{
 		System.out.println("Enter a: ");
 		a = scan.nextInt();
 		
@@ -14,6 +15,7 @@ public class compare_3_nums{
 
 		System.out.println("Enter c: ");
 		c = scan.nextInt();
+		}
 		
 		if(a > b && a > c){
 			
