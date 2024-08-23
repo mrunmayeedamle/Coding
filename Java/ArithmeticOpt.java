@@ -19,25 +19,29 @@ public class ArithmeticOpt{
 		c = scan.next().charAt(0);
 		}
 
-		switch(c)
-		{
-			case '+' : answer = a + b;
-			System.out.print(a + " + " + b + " = " + answer); 
-			break;
-
-			case '-' :answer = a - b;
-			System.out.print(a + " - " + b + " = " + answer);
-			break;
-
-			case '*' :answer = a * b;
-			System.out.print(a + " * " + b + " = " + answer); 
-			break;
-
-			case '/' :answer = a / b;
-			System.out.print(a + " / " + b + " = " + answer);
-			break;
-
-			default: System.out.println("Invalid input.");
+		switch (c) {
+			case '+' -> {
+				answer = a + b;
+				System.out.print(a + " + " + b + " = " + answer);
+			}
+			case '-' -> {
+				answer = a - b;
+				System.out.print(a + " - " + b + " = " + answer);
+			}
+			case '*' -> {
+				answer = a * b;
+				System.out.print(a + " * " + b + " = " + answer);
+			}
+			case '/' -> {
+				if (b != 0) { 
+					answer = a / b;
+					System.out.print(a + " / " + b + " = " + answer);
+				} else {
+					System.out.println("Cannot divide by zero");
+				}
+			}
+			default -> System.out.println("Invalid input.");
 		}
+		
 	}
 }
