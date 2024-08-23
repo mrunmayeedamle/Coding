@@ -1,11 +1,12 @@
 import java.util.*;
 
-public class calcgrade{
+public class CalcGrade{
 
 	public static void main(String[] args) {
 
 		float m1, m2, m3, m4, m5, Grade;
-		Scanner scan = new Scanner(System.in);
+		try(Scanner scan = new Scanner(System.in);)
+		{
 
 		System.out.println("Enter the 5 grades of the student: ");
 		m1 = scan.nextFloat();
@@ -28,4 +29,5 @@ public class calcgrade{
 			
 }
 }
+	}
 }

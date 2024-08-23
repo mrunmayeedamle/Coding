@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class compare_3_nums{
+public class Compare_3_nums{
 
 	public static void main(String[] args) {
 

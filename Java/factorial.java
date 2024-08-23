@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class factorial {
+public class Factorial {
     public static void main(String[] args) {
         int fac, n;
         fac = 1;
 
-        Scanner scan = new Scanner(System.in);
-
+        try(Scanner scan = new Scanner(System.in);)
+        {
         System.out.println("Enter the number you need factorial for:" );
         n = scan.nextInt();
         scan.close();
@@ -18,4 +18,5 @@ public class factorial {
 
         System.out.println(n + "! = "+ fac);
     }
+}
 }

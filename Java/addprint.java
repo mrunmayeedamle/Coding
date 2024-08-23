@@ -1,4 +1,4 @@
-public class addprint{
+public class AddPrint{
 
 	public static void main(String[] args){
 		int a, b, sum;
