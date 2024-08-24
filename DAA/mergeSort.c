@@ -22,7 +22,7 @@ void Merge(int A[], int l, int m, int h)
             k++;
         }
     }
-    if(i <= m)
+    if(j > h)
     {
         while(i <= m)
         {
@@ -31,7 +31,7 @@ void Merge(int A[], int l, int m, int h)
             k++;
         }
     }
-    else
+    else if(i > m)
     {
         while(j <= h)
         {
