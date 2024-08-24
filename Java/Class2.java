@@ -1,4 +1,4 @@
-public class Class2 extends Class1 {
+public class Class2 {
     
     void print2()
     {
