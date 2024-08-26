@@ -12,6 +12,6 @@ public class Class2 {
         
         Class2 obj2 = new Class2();
 
-        obj2.print();
+        obj2.print2();
     }
 }
