@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void swap(int *a, int *b)
 {
@@ -51,6 +52,8 @@ void printArray(int arr[], int n)
 
 int main()
 {
+    clock_t begin = clock();
+
     int num;
     int array[50];
     printf("Enter the number of elements you want to add in an array: ");
@@ -69,5 +72,10 @@ int main()
     printf("Sorted array:[");
     printArray(array, num);
 
+    clock_t end = clock();
+
+    double time = (double)(end - begin) / CLOCKS_PER_SEC;
+
+    printf("Time taken to execute: %f", time);
     return 0;
 }

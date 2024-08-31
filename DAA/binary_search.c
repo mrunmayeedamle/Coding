@@ -1,5 +1,3 @@
-//Binary Search
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,7 +9,7 @@ int main()
     clock_t begin = clock();
 
     int array[100], num, i;
-    printf("Enter the number of elements you want to search in the array: ");
+    printf("Enter the number of elements you want to add in the array: ");
     scanf("%d", &num);
 
     for(i = 0; i < num; i++)
@@ -36,6 +34,7 @@ void bin_search(int arr[100], int n)
 
     low = 0;
     high = n - 1;
+    count = 0;
 
     //sorting the array
     for(i = 0; i < n; i++)
@@ -51,7 +50,6 @@ void bin_search(int arr[100], int n)
         }
     }
 
-    //searching
     printf("Given array: [ ");
     for(j = 0; j < n; j++)
     {
@@ -59,30 +57,28 @@ void bin_search(int arr[100], int n)
     }
     printf("]\n");
 
-    printf("Enter the number you want to search: ");
+    printf("Enter the element to be searched: ");
     scanf("%d", &temp);
-
-    while(low<=high)
+    while(low <= high)
     {
-        mid = low + ((high-low)/2);
-        if(temp == arr[mid])
+        mid = low + ((high - low)/2);
+        if(arr[mid] == temp)
         {
-            printf("Element %d found at position %d \n", temp, mid+1);
+            printf("Element %d found in position %d in the list.\n", temp, mid + 1);
             count++;
             break;
         }
-        if(temp < arr[mid])
+        if(arr[mid] < temp)
         {
-            high = mid - 1;
+            low = mid + 1;
         }
         else
         {
-            low = mid + 1;
+            high = mid - 1;
         }
     }
     if(count<=0)
     {
-            printf("Element not found in the array.\n");
+        printf("Element %d not found in the array. \n", temp);
     }
-
 }

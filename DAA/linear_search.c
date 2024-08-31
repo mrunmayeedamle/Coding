@@ -1,5 +1,3 @@
-//Linear Search
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,7 +9,7 @@ int main()
     clock_t begin = clock();
 
     int array[100], num, i;
-    printf("Enter the number of elements you want to search in the array: ");
+    printf("Enter the number of elements you want to add in the array: ");
     scanf("%d", &num);
 
     for(i = 0; i < num; i++)

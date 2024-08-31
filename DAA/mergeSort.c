@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int B[100];
 void Merge(int A[], int l, int m, int h)
@@ -69,6 +71,8 @@ void printArray(int arr[], int n)
 
 int main()
 {
+    clock_t begin = clock();
+
     int A[100];
     int num;
     printf("Enter the number of elements you want in the array: ");
@@ -87,7 +91,11 @@ int main()
     printf("Sorted array:[");
     printArray(A, num);
 
+    clock_t end = clock();
+
+    double time = (double)(end - begin) / CLOCKS_PER_SEC;
+
+    printf("Time taken to execute: %f", time);
+
     return 0;
-
-
 }
