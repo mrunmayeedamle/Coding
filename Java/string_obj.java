@@ -2,7 +2,6 @@ import java.util.*;
 
 public class string_obj {
 
-    String firstName,lastName;
 
     void printName(String firstName, String lastName)
     {
@@ -13,17 +12,16 @@ public class string_obj {
     public static void main(String[] args) 
     {
         String first, last;
-        Scanner scan = new Scanner(System.in);
-
+        try(Scanner scan = new Scanner(System.in);)
+        {
         System.out.println("Enter your first name: ");
         first = scan.nextLine();
 
         System.out.println("Enter your last name: ");
         last = scan.nextLine();
 
-        scan.close();
-
         string_obj str = new string_obj();
         str.printName(first, last);
     }
+}
 }
