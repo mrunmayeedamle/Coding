@@ -1,17 +1,29 @@
+import java.util.*;
+
 public class string_obj {
 
-    String F_name = "Mrunmayee";
-    String L_name = "Damle";
+    String firstName,lastName;
 
-    void print()
+    void printName(String firstName, String lastName)
     {
-        System.out.println("First name : " + F_name);
-        System.out.println("Last name : " + L_name);
+        System.out.println("First name : " + firstName);
+        System.out.println("Last name : " + lastName);
     }
     
-    public static void main(String[] args) {
-        string_obj str = new string_obj();
+    public static void main(String[] args) 
+    {
+        String first, last;
+        Scanner scan = new Scanner(System.in);
 
-        str.print();
+        System.out.println("Enter your first name: ");
+        first = scan.nextLine();
+
+        System.out.println("Enter your last name: ");
+        last = scan.nextLine();
+
+        scan.close();
+
+        string_obj str = new string_obj();
+        str.printName(first, last);
     }
 }
