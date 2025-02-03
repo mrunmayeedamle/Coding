@@ -1,3 +1,5 @@
+//BoilerPlate Code
+
 #include <iostream>
 using namespace std;
 

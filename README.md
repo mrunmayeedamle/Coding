@@ -41,7 +41,9 @@ git diff (branch_name) - compare branches
 git merge(branch_name) - merge branches
 <br>
 12] git pull origin main - pull to local repo from remote repo
+git push origin <branch_name> - 
 <br>
+
 13] git reset (file) / git reset - reset any changes for file/all
 <br>
 14] git reset HEAD~1 - undo 1 commit

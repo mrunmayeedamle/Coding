@@ -8,13 +8,11 @@ float ratio[100];
 int obj_index[100];
 
 int main() {
-    //enter info from user
     printf("Enter the number of objects: ");
     scanf("%d", &obj);
     printf("Enter the capacity of knapsack: ");
     scanf("%d", &capacity);
 
-    //get weight and price. calculate ratio
     for (int i = 0; i < obj; i++) {
         printf("Enter the weight of object %d: ", i + 1);
         scanf("%d", &weight[i]);
@@ -25,7 +23,6 @@ int main() {
     }
 
 
-    //swapping the ratio and indexes
     for (int i = 0; i < obj - 1; i++) {
         for (int j = 0; j < obj - i - 1; j++) {
             if (ratio[j] < ratio[j + 1]) {
@@ -42,7 +39,6 @@ int main() {
         }
     }
 
-    //calculate final value
     float total_value = 0.0;
     for (int i = 0; i < obj; i++) {
         if (capacity == 0)
