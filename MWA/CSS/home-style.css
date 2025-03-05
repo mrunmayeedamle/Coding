@@ -1,0 +1,140 @@
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+
+/* Header */
+
+header {
+    background-image: url('../Images/header.jfif');
+    /* Example background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+nav {
+    background-color: #4c3c93;
+    padding: 15px 0;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+    /* Golden yellow for hover effect */
+}
+
+
+/* Featured Books Section */
+
+.container {
+    padding: 30px 20px;
+}
+
+.featured-books {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.book {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book img {
+    max-width: 35%;
+    /* You can reduce this value to shrink the images */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.book h3 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.book p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    /* Subtle hover effect */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.7;
+}
