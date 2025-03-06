@@ -21,7 +21,6 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
-    /* Ensure some padding for responsiveness */
     box-sizing: border-box;
 }
 

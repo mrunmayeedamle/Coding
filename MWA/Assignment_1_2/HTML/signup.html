@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <textarea id="address" placeholder="Address" rows="4" required></textarea>
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="../JS/validation.js"></script>
+</body>
+
+</html>

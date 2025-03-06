@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #e44d26;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #c0392b;
+    border-radius: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 60px 20px 20px; 
+}
+
+.info-box {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info-box h2 {
+    color: #343a40;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.shop-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background-color: #e44d26;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.shop-now-btn:hover {
+    background-color: #c0392b;
+}

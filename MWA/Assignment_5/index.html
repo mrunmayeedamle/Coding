@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Country & Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Select a Country</h2>
+
+        <label for="country">Choose a country:</label>
+        <select id="country" onchange="displayCapital()">
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="Brazil">Brazil</option>
+        </select>
+
+        <p id="capital"></p>
+    </div>
+
+</body>
+</html>
