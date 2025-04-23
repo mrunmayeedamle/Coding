@@ -1,1 +1,7 @@
-Hello. This is the Sender. I'm sending this file 'original.txt' to the receiver with MD5 Hash function
+#original.txt
+
+Aliquam at iaculis turpis.
+Nunc sed leo nec mauris dignissim consectetur.
+Nam eget finibus ipsum.
+Morbi laoreet leo nec urna tincidunt, vitae porta libero euismod.
+Pellentesque vel augue ac massa tempor fringilla a eget dui.
