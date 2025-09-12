@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>1</id>
+        <name>John Doe</name>
+        <email>john@example.com</email>
+        <phone>1234567890</phone>
+    </user>
+    <user>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <email>jane@example.com</email>
+        <phone>9876543210</phone>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Michael Johnson</name>
+        <email>michael@example.com</email>
+        <phone>9988776655</phone>
+    </user>
+    <user>
+        <id>4</id>
+        <name>Emily Davis</name>
+        <email>emily@example.com</email>
+        <phone>8877665544</phone>
+    </user>
+    <user>
+        <id>5</id>
+        <name>William Brown</name>
+        <email>william@example.com</email>
+        <phone>7766554433</phone>
+    </user>
+    <user>
+        <id>6</id>
+        <name>Olivia Wilson</name>
+        <email>olivia@example.com</email>
+        <phone>6655443322</phone>
+    </user>
+    <user>
+        <id>7</id>
+        <name>Liam Miller</name>
+        <email>liam@example.com</email>
+        <phone>5544332211</phone>
+    </user>
+    <user>
+        <id>8</id>
+        <name>Emma Taylor</name>
+        <email>emma@example.com</email>
+        <phone>4433221100</phone>
+    </user>
+    <user>
+        <id>9</id>
+        <name>Noah Anderson</name>
+        <email>noah@example.com</email>
+        <phone>3322110099</phone>
+    </user>
+    <user>
+        <id>10</id>
+        <name>Ava Thomas</name>
+        <email>ava@example.com</email>
+        <phone>2211009988</phone>
+    </user>
+</users>

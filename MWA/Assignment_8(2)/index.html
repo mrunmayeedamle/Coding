@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+            text-align: center;
+            padding-top: 100px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Enter Your Details</h1>
+    <form action="userServlet.jsp" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required><br>
+        <input type="number" name="age" placeholder="Enter your age" required><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
